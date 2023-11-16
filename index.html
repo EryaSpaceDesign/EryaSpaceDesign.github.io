@@ -77,8 +77,8 @@ img {border: none;}
 /* 页面标题图 */
 .web-title {
     max-width: 90%;
-    -webkit-animation: fadeIn 1s linear;
-    animation: fadeIn 1s linear;
+    -webkit-animation: fadeIn 1.5s linear;
+    animation: fadeIn 1.5s linear;
 }
 /*.web-title:hover {*/
 /*    -webkit-animation:bounce 1s .1s ease both;*/
@@ -150,9 +150,9 @@ img {border: none;}
     .container {
         width: 750px;
     }
-    .mk-item {
+    /* .mk-item {
         width: 50%;
-    }
+    } */
 }
 @media screen and (max-width: 800px) {
     .container {
@@ -379,7 +379,7 @@ img {border: none;}
     <div id="victor-container"><div id="victor-output"></div></div>
 
     <div class="welcome">
-        <img class="web-title" src="img/logo.png" href="" alt="ERYA 空间设计" />
+        <img class="web-title" src="img/peoples.jpeg" href="" alt="ERYA 空间设计" />
     </div>
 
     <!--向下滚动提示-->
@@ -397,27 +397,19 @@ img {border: none;}
     <span>设计作品</span>
 </h3>
 
-<p class="mk-title-describe">没错，这些都是我的原创作品</p>
-
+<p class="mk-title-describe">…………</p>
+<!-- feed 容器 -->
 <div class="mk-item-box">
 
-<div class="mk-item">
+<!-- <div class="mk-item">
     <a href="https://vr.justeasy.cn/view/716pg6y523806256-1668260903.html" target="_blank">
         <h3 class="img-item">大公府</h3>
         <img class="img-item" src="./img/大公府.jpg">
         </img>
     </a>
-</div>
+</div> 
 
-<div class="mk-item">
-    <a href="https://vr.justeasy.cn/view/716pg6y523806256-1668260903.html" target="_blank">
-        <h3>大公府</h3>
-        <img class="img-item" src="./img/大公府.jpg">
-        </img>
-    </a>
-</div>
-
-<div class="mk-item">
+ <div class="mk-item">
     <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
         <article class="mk-color-item color2">
             <div class="item-logo">
@@ -429,84 +421,7 @@ img {border: none;}
         </article>
     </a>
 </div>
-
-<div class="mk-item">
-    <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
-        <article class="mk-color-item color3">
-            <div class="item-logo">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </div>
-            <h3>新中式</h3>
-            <p>色彩明快、空间层次</p>
-            <i class="light"></i>
-        </article>
-    </a>
-</div>
-
-<div class="mk-item">
-    <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
-        <article class="mk-color-item color4">
-            <div class="item-logo">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-            </div>
-            <h3>休闲混搭</h3>
-            <p>主次分明、大胆纯色</p>
-            <i class="light"></i>
-        </article>
-    </a>
-</div>
-
-<div class="mk-item">
-    <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
-        <article class="mk-color-item color6">
-            <div class="item-logo">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-            </div>
-            <h3>地中海</h3>
-            <p>北非的深红靛蓝、南法的黄金薰衣</p>
-            <i class="light"></i>
-        </article>
-    </a>
-</div>
-
-<div class="mk-item">
-    <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
-        <article class="mk-color-item color5">
-            <div class="item-logo">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-            </div>
-            <h3>东南亚</h3>
-            <p>天然色系、佛教浓郁</p>
-            <i class="light"></i>
-        </article>
-    </a>
-</div>
-
-<div class="mk-item">
-    <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
-        <article class="mk-color-item color1">
-            <div class="item-logo">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-            </div>
-            <h3>日式</h3>
-            <p>木材朴素、茶道极简</p>
-            <i class="light"></i>
-        </article>
-    </a>
-</div>
-
-<div class="mk-item">
-    <a href="https://eryaspacedesign.github.io/design/现代.html" target="_blank">
-        <article class="mk-color-item color2">
-            <div class="item-logo">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-            </div>
-            <h3>新古典</h3>
-            <p>形散神聚、古典美</p>
-            <i class="light"></i>
-        </article>
-    </a>
-</div>
+-->
 
 
 
@@ -556,6 +471,43 @@ $(function() {
 
     console.info('----------------');
 });
+
+
+case_data = [
+  {
+    "title":"大公府",
+    "imgPath":"./img/大公府.jpg",
+    "linkUrl":"https://vr.justeasy.cn/view/716pg6y523806256-1668260903.html"
+  },
+  {
+    "title":"大公府",
+    "imgPath":"./img/大公府.jpg",
+    "linkUrl":"https://vr.justeasy.cn/view/716pg6y523806256-1668260903.html"
+  },
+  {
+    "title":"大公府",
+    "imgPath":"./img/大公府.jpg",
+    "linkUrl":"https://vr.justeasy.cn/view/716pg6y523806256-1668260903.html"
+  },
+  {
+    "title":"大公府",
+    "imgPath":"./img/大公府.jpg",
+    "linkUrl":"https://vr.justeasy.cn/view/716pg6y523806256-1668260903.html"
+  }
+]
+
+    // 填充数据
+    $(document).ready(function(){
+        $.each(case_data,function(index,item){
+            one_case = "<div class='mk-item'> <a href="
+                +item.linkUrl+ "target='_blank'><h3 class='img-item'>"
+                    +item.title+"</h3> <img class='img-item' src="
+                    +item.imgPath+"></img></a></div>"
+            $(".mk-item-box").append(one_case)
+            console.info(item)
+        })
+    })
+
 
 </script>
 
