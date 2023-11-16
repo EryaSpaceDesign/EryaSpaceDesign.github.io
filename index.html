@@ -114,11 +114,12 @@ img {border: none;}
 
 /* 栅格系统 */
 .mk-item-box {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin: 0 auto;
 }
 .mk-item-box:before,.mk-item-box:after {
-    content: " ";
+    content: "";
     display: table;
 }
 .mk-item-box:after {
@@ -126,7 +127,7 @@ img {border: none;}
 }
 .mk-item {
     width: 100%;
-    float: left;
+    /* float: left; */
     padding-left: 10px;
     padding-right: 10px;
     position: relative;
@@ -134,9 +135,9 @@ img {border: none;}
 
 .img-item {
     width: 100%;
-    float: left;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* float: left; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
     position: relative;
 }
 
@@ -157,8 +158,8 @@ img {border: none;}
 @media screen and (max-width: 800px) {
     .container {
         width: 100%;
-        padding-left:30px;
-        padding-right: 30px;
+        padding-left:10px;
+        padding-right: 10px;
     }
 
     .welcome>p {
@@ -166,10 +167,10 @@ img {border: none;}
     }
 }
 /**max-width: 600px*/
-@media screen and () {
+@media screen and (max-width: 600px) {
     .container {
-        padding-left:15px;
-        padding-right: 15px;
+        padding-left:10px;
+        padding-right: 10px;
          width: 100%;
     }
     .mk-item {
@@ -472,7 +473,7 @@ $(function() {
     console.info('----------------');
 });
 
-
+// 案例数据
 case_data = [
   {
     "title":"大公府",
@@ -496,7 +497,7 @@ case_data = [
   }
 ]
 
-    // 填充数据
+    // 填充案例数据
     $(document).ready(function(){
         $.each(case_data,function(index,item){
             one_case = "<div class='mk-item'> <a href="
